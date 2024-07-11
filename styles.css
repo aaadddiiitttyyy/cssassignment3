@@ -1,0 +1,133 @@
+/* Set base styles for the body */
+body {
+    font-family: 'Permanent Marker', cursive; /* Custom font from Google Fonts */
+    text-align: center; /* Center-align text */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-size: 18px; /* Set base font size */
+    animation: backgroundTransition 10s infinite; /* Apply animation to the body */
+}
+
+/* Define the keyframes for the background transition animation */
+@keyframes backgroundTransition {
+    0% {
+        background-color: #f6f5f2; /* Start color */
+    }
+    25% {
+        background-color: #f0f1ae; /* Second color */
+    }
+    50% {
+        background-color: #cbfcba; /* Third color */
+    }
+    75% {
+        background-color: #b8f9f1; /* Fourth color */
+    }
+    100% {
+        background-color: #baeaf6; /* End color (same as start to loop) */
+    }
+}
+
+/* Styles for the header */
+header {
+    background: linear-gradient(to right, #ffcc00, #ff6600); /* Gradient background */
+    padding: 20px; /* Add padding */
+    color: white; /* White text color */
+    font-size: 48px; /* Larger header text */
+}
+
+/* Styles for the navigation menu */
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    font-size: 34px; /* Larger navigation text */
+}
+
+nav li {
+    display: inline; /* Display list items inline */
+    margin: 0 10px; /* Add horizontal margin */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ff6600; /* Set link color */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change link color on hover */
+}
+
+/* Styles for the main content */
+main {
+    margin: 20px; /* Add margin */
+    font-size: 20px; /* Larger main text */
+}
+
+main section {
+    margin-bottom: 20px; /* Add margin between sections */
+}
+
+main h2 {
+    font-size: 38px; /* Larger section headings */
+}
+
+main p, main ul {
+    font-size: 24px; /* Larger text around Reese's candy */
+}
+
+main img {
+    max-width: 30%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Styles for the image marquee */
+.marquee {
+    width: 100%; /* Full width */
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent line break */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.marquee img {
+    display: inline-block; /* Inline block elements */
+    padding: 10px; /* Add padding around images */
+    animation: scroll 10s linear infinite; /* Apply scroll animation */
+}
+
+/* Define the keyframes for the scroll animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%); /* Start from the right */
+    }
+    100% {
+        transform: translateX(-100%); /* End at the left */
+    }
+}
+
+/* Styles for the footer */
+footer {
+    background: #333; /* Dark background color */
+    color: white; /* White text color */
+    padding: 20px; /* Add padding */
+    font-size: 20px; /* Footer text size */
+}
+
+footer img {
+    width: 150px; /* Set width for logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+footer form {
+    margin-top: 10px; /* Add margin above form */
+}
+
+footer input[type="text"], footer input[type="email"] {
+    margin: 5px; /* Add margin around inputs */
+    padding: 10px; /* Add padding inside inputs */
+    font-size: 20px; /* Larger input text */
+}
+
+footer input[type="submit"] {
+    padding: 10px 20px; /* Add padding to submit button */
+    font-size: 20px; /* Larger submit button text */
+}
